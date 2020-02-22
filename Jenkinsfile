@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                sh 'npm install' 
+                sh 'npm install && npm install --save-dev cross-env' 
             }
         }
         stage('Test') { 
